@@ -5,22 +5,22 @@ const featureCardsData = [
     desc: "This is Shawn Mendes. The essential tracks, all in one playlist.",
   },
   {
-    img: "https://raw.githubusercontent.com/khatri2002/codepen/refs/heads/main/spotify/assets/images/feature-2.jpg",
+    img: "https://raw.githubusercontent.com/khatri2002/codepen/refs/heads/main/spotify/assets/images/feature-2.jpeg",
     title: "Shawn Mendes Radio",
     desc: "With Maroon 5, One Direction, Sam Smith and more",
   },
   {
-    img: "https://raw.githubusercontent.com/khatri2002/codepen/refs/heads/main/spotify/assets/images/feature-3.jpg",
+    img: "https://raw.githubusercontent.com/khatri2002/codepen/refs/heads/main/spotify/assets/images/feature-3.jpeg",
     title: "Mega Hit Max",
     desc: "A mega mix of 75 favorites from the last few years!",
   },
   {
-    img: "https://raw.githubusercontent.com/khatri2002/codepen/refs/heads/main/spotify/assets/images/feature-4.jpg",
+    img: "https://raw.githubusercontent.com/khatri2002/codepen/refs/heads/main/spotify/assets/images/feature-4.jpeg",
     title: "All Out 2010s",
     desc: "The biggest songs of the 2010s. Cover: Justin Bieber",
   },
   {
-    img: "https://raw.githubusercontent.com/khatri2002/codepen/refs/heads/main/spotify/assets/images/feature-5.jpg",
+    img: "https://raw.githubusercontent.com/khatri2002/codepen/refs/heads/main/spotify/assets/images/feature-5.jpeg",
     title: "All Out 2020s",
     desc: "The biggest songs of the 2020s. Cover: Doja Cat",
   },
