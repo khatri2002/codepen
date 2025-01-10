@@ -8,8 +8,11 @@
 
   .container {
     width: 70rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.1rem;
 
-    .feature-section {
+    .section {
       .header {
         display: flex;
         align-items: center;
@@ -179,6 +182,12 @@
               background-color: black;
             }
           }
+        }
+      }
+
+      &.artist-section {
+        .cards-container .card .img-wrapper .card-img {
+          border-radius: 50%;
         }
       }
     }

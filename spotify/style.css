@@ -8,28 +8,31 @@
 }
 .main .container {
   width: 70rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.1rem;
 }
-.main .container .feature-section .header {
+.main .container .section .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-inline: 0.8rem;
 }
-.main .container .feature-section .header .hero-text {
+.main .container .section .header .hero-text {
   color: white;
   font-size: 1.4rem;
   font-weight: 500;
 }
-.main .container .feature-section .header .hero-text:hover {
+.main .container .section .header .hero-text:hover {
   text-decoration: underline;
 }
-.main .container .feature-section .header .sub-text {
+.main .container .section .header .sub-text {
   color: #b3b3b3;
   font-size: 0.85rem;
   font-weight: 500;
   position: relative;
 }
-.main .container .feature-section .header .sub-text:before {
+.main .container .section .header .sub-text:before {
   content: "";
   position: absolute;
   bottom: 4px;
@@ -38,27 +41,27 @@
   width: 100%;
   visibility: hidden;
 }
-.main .container .feature-section .header .sub-text:hover::before {
+.main .container .section .header .sub-text:hover::before {
   visibility: visible;
 }
-.main .container .feature-section .cards-container {
+.main .container .section .cards-container {
   margin-top: 0.3rem;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
-.main .container .feature-section .cards-container .card {
+.main .container .section .cards-container .card {
   border-radius: 8px;
   padding: 0.8rem;
   cursor: pointer;
   transition: 0.1s ease-in;
 }
-.main .container .feature-section .cards-container .card .img-wrapper {
+.main .container .section .cards-container .card .img-wrapper {
   position: relative;
 }
-.main .container .feature-section .cards-container .card .img-wrapper .card-img {
+.main .container .section .cards-container .card .img-wrapper .card-img {
   border-radius: 8px;
 }
-.main .container .feature-section .cards-container .card .img-wrapper .play-btn-wrapper {
+.main .container .section .cards-container .card .img-wrapper .play-btn-wrapper {
   position: absolute;
   bottom: 0.5rem;
   right: 0.5rem;
@@ -69,7 +72,7 @@
   transition: 0.2s;
   border-radius: 50%;
 }
-.main .container .feature-section .cards-container .card .img-wrapper .play-btn-wrapper .tooltip-text {
+.main .container .section .cards-container .card .img-wrapper .play-btn-wrapper .tooltip-text {
   position: absolute;
   text-wrap: nowrap;
   z-index: 99;
@@ -86,7 +89,7 @@
   visibility: hidden;
   transition: 0.2s ease-in 1s;
 }
-.main .container .feature-section .cards-container .card .img-wrapper .play-btn-wrapper .play-btn {
+.main .container .section .cards-container .card .img-wrapper .play-btn-wrapper .play-btn {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -96,39 +99,39 @@
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 0px;
 }
-.main .container .feature-section .cards-container .card .img-wrapper .play-btn-wrapper .play-btn .play-icon {
+.main .container .section .cards-container .card .img-wrapper .play-btn-wrapper .play-btn .play-icon {
   width: 1.5rem;
   height: 1.5rem;
 }
-.main .container .feature-section .cards-container .card .img-wrapper .play-btn-wrapper .play-btn:hover {
+.main .container .section .cards-container .card .img-wrapper .play-btn-wrapper .play-btn:hover {
   transform: scale(1.05) !important;
   background-color: #38d96e;
 }
-.main .container .feature-section .cards-container .card .img-wrapper .play-btn-wrapper .play-btn:active {
+.main .container .section .cards-container .card .img-wrapper .play-btn-wrapper .play-btn:active {
   background-color: #32bf61;
 }
-.main .container .feature-section .cards-container .card .img-wrapper .play-btn-wrapper:hover .tooltip-text {
+.main .container .section .cards-container .card .img-wrapper .play-btn-wrapper:hover .tooltip-text {
   opacity: 1;
   visibility: visible;
 }
-.main .container .feature-section .cards-container .card .img-wrapper .play-btn-wrapper:not(:hover) .tooltip-text {
+.main .container .section .cards-container .card .img-wrapper .play-btn-wrapper:not(:hover) .tooltip-text {
   opacity: 0;
   visibility: hidden;
   transition: none;
 }
-.main .container .feature-section .cards-container .card .text {
+.main .container .section .cards-container .card .text {
   margin-top: 0.5rem;
 }
-.main .container .feature-section .cards-container .card .text .hero-text {
+.main .container .section .cards-container .card .text .hero-text {
   display: block;
   color: white;
   font-size: 0.95rem;
   opacity: 97%;
 }
-.main .container .feature-section .cards-container .card .text .hero-text:hover {
+.main .container .section .cards-container .card .text .hero-text:hover {
   text-decoration: underline;
 }
-.main .container .feature-section .cards-container .card .text .sub-text {
+.main .container .section .cards-container .card .text .sub-text {
   margin-top: 0.15rem;
   color: #b3b3b3;
   font-size: 0.8rem;
@@ -137,14 +140,17 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-.main .container .feature-section .cards-container .card:hover {
+.main .container .section .cards-container .card:hover {
   background-color: #1f1f1f;
 }
-.main .container .feature-section .cards-container .card:hover .img-wrapper .play-btn-wrapper {
+.main .container .section .cards-container .card:hover .img-wrapper .play-btn-wrapper {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
-.main .container .feature-section .cards-container .card:active:not(:has(.play-btn:active)) {
+.main .container .section .cards-container .card:active:not(:has(.play-btn:active)) {
   background-color: black;
+}
+.main .container .section.artist-section .cards-container .card .img-wrapper .card-img {
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
