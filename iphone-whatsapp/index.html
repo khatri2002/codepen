@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iPhone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="animation-input">
+        <label for="animate">Animate: </label>
+        <input id="animate" name="animate" type="checkbox" checked />
+      </div>
+      <div id="iPhone" class="iphone-wrapper animate">
+        <span class="power-btn"></span>
+        <div class="volumne-btn-container">
+          <span class="volume-btn"></span>
+          <span class="volume-btn"></span>
+        </div>
+        <div class="iPhone">
+          <div class="headers-container">
+            <div class="iphone-header">
+              <span class="time-text">12:32</span>
+              <div class="dynamic-island">
+                <span class="camera"></span>
+              </div>
+              <div class="icons">
+                <img
+                  class="icon"
+                  src="./assets/images/network-icon.svg"
+                  alt="network-icon"
+                />
+                <img
+                  class="icon"
+                  src="./assets/images/wifi-icon.svg"
+                  alt="wifi-icon"
+                />
+                <img
+                  class="icon"
+                  src="./assets/images/battery-icon.svg"
+                  alt="battery-icon"
+                />
+              </div>
+            </div>
+            <div class="whatsapp-header">
+              <i class="fa-solid fa-ellipsis"></i>
+              <div class="right-action">
+                <i class="fa-solid fa-camera"></i>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <div class="headers-secondary">
+            <h1 class="hero-text">Chats</h1>
+            <div class="input">
+              <img
+                class="icon"
+                src="./assets/images/meta-ai-logo.png"
+                alt="meta-ai-logo"
+              />
+              <input type="text" placeholder="Ask Meta AI or Search" />
+            </div>
+          </div>
+          <ul class="filter-items">
+            <li class="item active">
+              <span>All</span>
+            </li>
+            <li class="item">
+              <span>Unread</span>
+            </li>
+            <li class="item">
+              <span>Favourites</span>
+            </li>
+            <li class="item">
+              <span>Groups</span>
+            </li>
+            <li class="item">
+              <span>
+                <i class="fa-solid fa-plus"></i>
+              </span>
+            </li>
+          </ul>
+          <ul class="chats">
+            <li class="chat">
+              <img
+                class="user-img"
+                src="./assets/images/chat-1.jpg"
+                alt="chat-1"
+              />
+              <div class="chat-content">
+                <div class="chat-header">
+                  <span class="chat-hero-text">The Meme Machine</span>
+                  <span class="chat-sub-text active">5:29PM</span>
+                </div>
+                <div class="chat-recent-msg">
+                  <span class="chat-msg-text"
+                    >Jay: Reminder - The admin is not responsible for your bad
+                    jokes!</span
+                  >
+
+                  <span class="chat-unread-badge">16</span>
+                </div>
+              </div>
+            </li>
+            <li class="chat">
+              <img
+                class="user-img"
+                src="./assets/images/chat-2.jpg"
+                alt="chat-2"
+              />
+              <div class="chat-content">
+                <div class="chat-header">
+                  <span class="chat-hero-text">Glenn Carter</span>
+                  <span class="chat-sub-text active">4:51PM</span>
+                </div>
+                <div class="chat-recent-msg">
+                  <span class="chat-msg-text">Okay!</span>
+                  <div class="chat-unread-badge">
+                    <span>1</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="chat">
+              <img
+                class="user-img"
+                src="./assets/images/chat-3.jpg"
+                alt="chat-3"
+              />
+              <div class="chat-content">
+                <div class="chat-header">
+                  <span class="chat-hero-text">Mom</span>
+                  <span class="chat-sub-text">2:24PM</span>
+                </div>
+                <div class="chat-recent-msg">
+                  <span class="chat-msg-text"
+                    ><i class="fa-solid fa-video"></i> Video call</span
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="chat">
+              <img
+                class="user-img"
+                src="./assets/images/chat-4.png"
+                alt="chat-4"
+              />
+              <div class="chat-content">
+                <div class="chat-header">
+                  <span class="chat-hero-text">Kabir Singh</span>
+                  <span class="chat-sub-text">1:14PM</span>
+                </div>
+                <div class="chat-recent-msg">
+                  <span class="chat-msg-text">
+                    <img
+                      class="icon"
+                      src="./assets/images/double-check-icon.png"
+                      alt="double-check-icon"
+                    />
+                    <i class="fa-solid fa-camera"></i>
+                    Photo
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="chat">
+              <img
+                class="user-img"
+                src="./assets/images/chat-5.jpeg"
+                alt="chat-5"
+              />
+              <div class="chat-content">
+                <div class="chat-header">
+                  <span class="chat-hero-text">Aakash</span>
+                  <span class="chat-sub-text">10:02AM</span>
+                </div>
+                <div class="chat-recent-msg">
+                  <span class="chat-msg-text">
+                    <img
+                      class="icon active"
+                      src="./assets/images/double-check-icon.png"
+                      alt="double-check-icon"
+                    />
+                    <i class="fa-solid fa-camera"></i>
+                    Photo
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="chat">
+              <img
+                class="user-img"
+                src="./assets/images/chat-6.jpg"
+                alt="chat-6"
+              />
+              <div class="chat-content">
+                <div class="chat-header">
+                  <span class="chat-hero-text">Emma (Colleague)</span>
+                  <span class="chat-sub-text">9:15AM</span>
+                </div>
+                <div class="chat-recent-msg">
+                  <span class="chat-msg-text"> Got it! </span>
+                </div>
+              </div>
+            </li>
+            <li class="chat">
+              <img
+                class="user-img"
+                src="./assets/images/chat-7.jpg"
+                alt="chat-7"
+              />
+              <div class="chat-content">
+                <div class="chat-header">
+                  <span class="chat-hero-text">Amazon</span>
+                  <span class="chat-sub-text">9:15AM</span>
+                </div>
+                <div class="chat-recent-msg">
+                  <span class="chat-msg-text">
+                    Amazon Great Republic Day Sale: Starts: 13th Jan Noon 🤩
+                    Starts 12hr...
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="chat">
+              <img
+                class="user-img"
+                src="./assets/images/chat-8.jpeg"
+                alt="chat-8"
+              />
+              <div class="chat-content">
+                <div class="chat-header">
+                  <span class="chat-hero-text">Samay Raina </span>
+                  <span class="chat-sub-text">Yesterday</span>
+                </div>
+                <div class="chat-recent-msg">
+                  <span class="chat-msg-text">
+                    <img
+                      class="icon active"
+                      src="./assets/images/double-check-icon.png"
+                      alt="double-check-icon"
+                    />
+                    Bro 💀
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="chat">
+              <img
+                class="user-img"
+                src="./assets/images/chat-9.jpg"
+                alt="chat-9"
+              />
+              <div class="chat-content">
+                <div class="chat-header">
+                  <span class="chat-hero-text">Harper (Book Club)</span>
+                  <span class="chat-sub-text">Yesterday</span>
+                </div>
+                <div class="chat-recent-msg">
+                  <span class="chat-msg-text">Reacted ❤️ to "I'm in"</span>
+                </div>
+              </div>
+            </li>
+            <li class="chat">
+              <img
+                class="user-img"
+                src="./assets/images/chat-10.png"
+                alt="chat-10"
+              />
+              <div class="chat-content">
+                <div class="chat-header">
+                  <span class="chat-hero-text">Ethan</span>
+                  <span class="chat-sub-text active">Yesterday</span>
+                </div>
+                <div class="chat-recent-msg">
+                  <span class="chat-msg-text">?</span>
+                  <span class="chat-unread-badge">4</span>
+                </div>
+              </div>
+            </li>
+            <li class="chat">
+              <img
+                class="user-img"
+                src="./assets/images/chat-11.jpg"
+                alt="chat-11"
+              />
+              <div class="chat-content">
+                <div class="chat-header">
+                  <span class="chat-hero-text">Amelia</span>
+                  <span class="chat-sub-text active">Yesterday</span>
+                </div>
+                <div class="chat-recent-msg">
+                  <span class="chat-msg-text">Ethan is texting me... 🙂</span>
+                  <span class="chat-unread-badge">2</span>
+                </div>
+              </div>
+            </li>
+            <li class="chat">
+              <img
+                class="user-img"
+                src="./assets/images/chat-12.jpeg"
+                alt="chat-12"
+              />
+              <div class="chat-content">
+                <div class="chat-header">
+                  <span class="chat-hero-text">Bored Society</span>
+                  <span class="chat-sub-text">Yesterday</span>
+                </div>
+                <div class="chat-recent-msg">
+                  <span class="chat-msg-text">Namsi: duhhhh!</span>
+                </div>
+              </div>
+            </li>
+            <li class="chat">
+              <img
+                class="user-img"
+                src="./assets/images/chat-13.jpeg"
+                alt="chat-13"
+              />
+              <div class="chat-content">
+                <div class="chat-header">
+                  <span class="chat-hero-text">Karan K.</span>
+                  <span class="chat-sub-text">Yesterday</span>
+                </div>
+                <div class="chat-recent-msg">
+                  <span class="chat-msg-text">
+                    <img
+                      class="icon active"
+                      src="./assets/images/double-check-icon.png"
+                      alt="double-check-icon"
+                    />
+
+                    He He :)</span
+                  >
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="footer">
+            <li class="item">
+              <img src="./assets/images/updates-icon.png" alt="updates-icon" />
+              <span>Updates</span>
+            </li>
+            <li class="item">
+              <img src="./assets/images/calls-icon.png" alt="calls-icon" />
+              <span>Calls</span>
+            </li>
+            <li class="item">
+              <img
+                class="communities-icon"
+                src="./assets/images/communities-icon 2 Background Removed.png"
+                alt="communities-icon"
+              />
+              <span>Communities</span>
+            </li>
+            <li class="item active current">
+              <img src="./assets/images/chats-icon.png" alt="chats-icon" />
+              <span>Chats</span>
+              <div class="active-unread">
+                <span>4</span>
+              </div>
+            </li>
+            <li class="item">
+              <img
+                src="./assets/images/settings-icon.png"
+                alt="settings-icon"
+              />
+              <span>Settings</span>
+            </li>
+          </ul>
+        </div>
+        <span class="iPhone-bottom"></span>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
