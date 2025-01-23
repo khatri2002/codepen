@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --switch-width: 12rem;
+  --switch-height: 5rem;
+  --btn-size: 4.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Be Vietnam Pro", serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.8rem;
+  -moz-column-gap: 1.9rem;
+       column-gap: 1.9rem;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(45deg, rgb(24, 20, 152) 0%, rgb(0, 0, 0) 40%);
+}
+body span {
+  z-index: 99;
+}
+body label {
+  height: var(--switch-height);
+  width: var(--switch-width);
+  background-color: rgb(0, 17, 52);
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  border: 0.7px solid transparent;
+  transition: background-color 0.4s, transform 0.2s, border-color 0.1s;
+  z-index: 99;
+}
+body label input {
+  display: none;
+}
+body label span {
+  display: block;
+  height: var(--btn-size);
+  width: var(--btn-size);
+  background: radial-gradient(circle, rgb(0, 48, 143) 30%, rgb(0, 0, 0) 100%);
+  border-radius: 50%;
+  border-right: 2px solid rgba(128, 128, 128, 0.7764705882);
+  position: relative;
+  transform: translateX(calc((var(--switch-width) - var(--switch-height)) / -2));
+  transition: transform 0.2s;
+}
+body label span:before {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  border: 2px dashed rgba(255, 255, 255, 0.0901960784);
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+body .bubbles {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  transition: transform 0.8s;
+}
+body .bubbles .bubble {
+  display: block;
+  position: absolute;
+  animation: move 30s infinite;
+}
+body .bubbles .bubble span {
+  display: block;
+  border-radius: 50%;
+  animation: rotate 10s infinite;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body .bubbles .bubble span:before {
+  content: "";
+  position: absolute;
+  width: 12%;
+  height: 12%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6274509804);
+  right: 20%;
+  top: 23%;
+}
+body .bubbles .bubble:nth-child(1) {
+  width: 3rem;
+  height: 3rem;
+  left: 10%;
+  top: 13%;
+}
+body .bubbles .bubble:nth-child(2) {
+  width: 4rem;
+  height: 4rem;
+  left: 20%;
+  top: 35%;
+}
+body .bubbles .bubble:nth-child(3) {
+  width: 1.5rem;
+  height: 1.5rem;
+  left: 20%;
+  top: 60%;
+}
+body .bubbles .bubble:nth-child(4) {
+  width: 7rem;
+  height: 7rem;
+  left: 5%;
+  top: 80%;
+}
+body .bubbles .bubble:nth-child(5) {
+  width: 3rem;
+  height: 3rem;
+  left: 80%;
+  top: 25%;
+}
+body .bubbles .bubble:nth-child(6) {
+  width: 2rem;
+  height: 2rem;
+  left: 70%;
+  top: 63%;
+}
+body .bubbles .bubble:nth-child(7) {
+  width: 2rem;
+  height: 2rem;
+  left: 85%;
+  top: 90%;
+}
+body .bubbles .bubble:nth-child(7) {
+  width: 2.3rem;
+  height: 2.3rem;
+  left: 50%;
+  top: 90%;
+}
+body .bubbles .bubble:nth-child(8) {
+  width: 2.3rem;
+  height: 2.3rem;
+  left: 50%;
+  top: 20%;
+}
+body .bubbles .bubble:nth-child(9) {
+  width: 3rem;
+  height: 3rem;
+  left: 35%;
+  top: 30%;
+}
+body .bubbles .bubble:nth-child(10) {
+  width: 2rem;
+  height: 2rem;
+  left: 35%;
+  top: 90%;
+}
+body .bubbles .bubble:nth-child(11) {
+  width: 2rem;
+  height: 2rem;
+  left: 80%;
+  top: 100%;
+}
+body .bubbles.blue-bubbles {
+  transform: translateY(0);
+}
+body .bubbles.blue-bubbles .bubble span {
+  background: radial-gradient(circle, rgb(3, 56, 161) 50%, rgb(0, 0, 0) 100%);
+}
+body .bubbles.pink-bubbles {
+  transform: translateY(100%);
+}
+body .bubbles.pink-bubbles .bubble span {
+  background: radial-gradient(circle, rgb(170, 16, 79) 50%, rgb(0, 0, 0) 100%);
+}
+body:has(input:checked) {
+  background: linear-gradient(-45deg, rgb(128, 9, 122) 0%, rgb(0, 0, 0) 40%);
+}
+body:has(input:checked) label {
+  background-color: rgb(62, 5, 29);
+}
+body:has(input:checked) label span {
+  transform: translateX(calc((var(--switch-width) - var(--switch-height)) / 2)) rotate(180deg);
+  background: radial-gradient(circle, rgb(170, 16, 79) 30%, rgb(0, 0, 0) 100%);
+}
+body:has(input:checked) .bubbles.blue-bubbles {
+  transform: translateY(100%);
+}
+body:has(input:checked) .bubbles.pink-bubbles {
+  transform: translateY(0);
+}
+body:has(input:active) label {
+  transform: scale(1.1);
+  border-color: rgba(255, 255, 255, 0.5254901961);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateY(0) scale(0);
+  }
+  100% {
+    transform: translateY(-10rem) scale(1);
+  }
+}/*# sourceMappingURL=style.css.map */
