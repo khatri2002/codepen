@@ -451,7 +451,7 @@ body {
   position: absolute;
   width: 50vw;
   height: 50vw;
-  background-image: url("./assets/images/plane-decorative.png");
+  background-image: url("https://raw.githubusercontent.com/khatri2002/codepen/refs/heads/main/landing-page/assets/images/plane-decorative.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
