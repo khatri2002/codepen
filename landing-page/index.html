@@ -8,7 +8,7 @@
   </head>
   <body>
     <main class="main">
-      <nav class="nav">
+      <nav class="nav container">
         <a href="#" class="logo-image">
           <img src="./assets/images/logo.png" alt="logo" />
         </a>
@@ -41,6 +41,11 @@
               alt="bag-icon"
             />
           </div>
+          <img
+            class="nav-product-img"
+            src="./assets/images/nachos-product.png"
+            alt="nachos-product"
+          />
         </div>
         <label for="hamburger" class="hamburger">
           <input type="checkbox" id="hamburger" />
@@ -48,8 +53,83 @@
           <span class="line"></span>
           <span class="line"></span>
         </label>
-        <div class="backdrop"></div>
+        <label for="hamburger" class="backdrop"></label>
       </nav>
+
+      <section class="main-section container">
+        <div class="main-text">
+          <div class="main-text-heading-wrapper">
+            <h1 class="main-text-heading">
+              <span>Flamin Hot</span> <span>Nachos</span>
+            </h1>
+            <img
+              src="./assets/images/chilli-picture.png"
+              alt=""
+              class="decorative-chilli-img"
+            />
+          </div>
+          <h2 class="main-text-desc">
+            Presenting the Classic Nachos with a Flaming Hot Twist. It will Rock
+            your taste buds with Chilli & Lime.
+          </h2>
+          <div class="add-to-cart-container">
+            <button class="add-to-cart-btn">
+              <div class="shopping-cart-icon">
+                <img
+                  src="./assets/images/shopping-cart.svg"
+                  alt="shopping-cart"
+                />
+              </div>
+              <span>Add to Cart</span>
+            </button>
+            <div class="quantity-container">
+              <button class="quantity-btn">+</button>
+              <div class="current-quantity-text">
+                <span>5</span>
+              </div>
+              <button class="quantity-btn">-</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-img-wrapper">
+          <img
+            class="product-img"
+            src="./assets/images/nachos-product.png"
+            alt="nachos-product"
+          />
+        </div>
+        <ul class="categories">
+          <li class="category category-chilli">
+            <div class="category-img-wrapper">
+              <img
+                src="./assets/images/chilli-picture.png"
+                alt="chilli-picture"
+              />
+            </div>
+            <span>Chilli</span>
+          </li>
+          <li class="category category-corn">
+            <div class="category-img-wrapper">
+              <img src="./assets/images/corn-picture.png" alt="corn-picture" />
+            </div>
+            <span>Corn</span>
+          </li>
+          <li class="category category-spices">
+            <div class="category-img-wrapper">
+              <img
+                src="./assets/images/spices-picture.png"
+                alt="spices-picture"
+              />
+            </div>
+            <span>Spices</span>
+          </li>
+        </ul>
+        <img
+          class="chilli-picture-decorative"
+          src="./assets/images/chilli-picture.png"
+          alt=""
+        />
+      </section>
     </main>
   </body>
 </html>
