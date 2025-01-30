@@ -279,6 +279,7 @@ body {
     gap: 3.3vw;
     position: relative;
     z-index: 10;
+    margin-bottom: 3rem;
 
     .main-text {
       margin-top: 4.9vw;
@@ -559,6 +560,7 @@ body {
       grid-template-columns: auto;
       flex-grow: 1;
       align-items: center;
+      margin-bottom: 0;
 
       .main-text {
         .main-text-heading-wrapper .main-text-heading {
