@@ -1,0 +1,127 @@
+:root {
+  --primary-bg: #4a3aff;
+  --primary-text: #fff;
+  --secondary-bg: #eff0f6;
+  --secondary-text: #6f6c90;
+
+  --transition-duration-text: 0.4s;
+  --transition-duration-line: 0.4s;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(235, 191, 236, 1) 36%,
+    rgba(173, 165, 255, 1) 100%
+  );
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-family: "Poppins", serif;
+  padding: 1rem;
+
+  .container {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+    gap: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    .step {
+      display: contents;
+
+      .text-wrapper {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: var(--secondary-bg);
+        color: var(--secondary-text);
+        transition: all var(--transition-duration-text)
+          var(--transition-duration-line);
+      }
+
+      .line {
+        width: 7rem;
+        height: 0.4rem;
+        background-color: var(--secondary-bg);
+        border-radius: 0.2rem;
+        position: relative;
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: var(--primary-bg);
+          border-radius: 0.2rem;
+          width: 0;
+          transition: all var(--transition-duration-line);
+        }
+      }
+
+      &.active {
+        .text-wrapper {
+          background-color: var(--primary-bg);
+          color: var(--primary-text);
+        }
+        .line:before {
+          width: 100%;
+        }
+      }
+    }
+
+    @media (width < 768px) {
+      flex-direction: column;
+
+      .step {
+        .line {
+          width: 0.4rem;
+          height: 5rem;
+
+          &:before {
+            width: 100%;
+            height: 0;
+          }
+        }
+
+        &.active {
+          .line:before {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .btn {
+    background-color: var(--secondary-bg);
+    color: var(--secondary-text);
+    border: none;
+    font-size: 1.1rem;
+    padding: 0.4rem 1.6rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: var(--primary-bg);
+      color: var(--primary-text);
+    }
+
+    &.hide {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+:root {
+  --primary-bg: #4a3aff;
+  --primary-text: #fff;
+  --secondary-bg: #eff0f6;
+  --secondary-text: #6f6c90;
+  --transition-duration-text: 0.4s;
+  --transition-duration-line: 0.4s;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(45deg, rgb(235, 191, 236) 36%, rgb(173, 165, 255) 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-family: "Poppins", serif;
+  padding: 1rem;
+}
+body .container {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  gap: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+body .container .step {
+  display: contents;
+}
+body .container .step .text-wrapper {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--secondary-bg);
+  color: var(--secondary-text);
+  transition: all var(--transition-duration-text) var(--transition-duration-line);
+}
+body .container .step .line {
+  width: 7rem;
+  height: 0.4rem;
+  background-color: var(--secondary-bg);
+  border-radius: 0.2rem;
+  position: relative;
+}
+body .container .step .line:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-bg);
+  border-radius: 0.2rem;
+  width: 0;
+  transition: all var(--transition-duration-line);
+}
+body .container .step.active .text-wrapper {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+}
+body .container .step.active .line:before {
+  width: 100%;
+}
+@media (width < 768px) {
+  body .container {
+    flex-direction: column;
+  }
+  body .container .step .line {
+    width: 0.4rem;
+    height: 5rem;
+  }
+  body .container .step .line:before {
+    width: 100%;
+    height: 0;
+  }
+  body .container .step.active .line:before {
+    height: 100%;
+  }
+}
+body .btn {
+  background-color: var(--secondary-bg);
+  color: var(--secondary-text);
+  border: none;
+  font-size: 1.1rem;
+  padding: 0.4rem 1.6rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 0.3s;
+}
+body .btn:hover {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+}
+body .btn.hide {
+  opacity: 0;
+  visibility: hidden;
+}/*# sourceMappingURL=style.css.map */
