@@ -37,8 +37,8 @@ body {
   .card {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem 1.5rem 0 1.5rem;
-    border-radius: 2rem;
+    padding: max(1.6vw, 1rem) max(1.6vw, 1rem) 0 max(1.6vw, 1rem);
+    border-radius: 2vw;
     cursor: pointer;
     overflow: hidden;
     position: relative;
@@ -52,11 +52,12 @@ body {
       .header-text {
         .text-main {
           display: block;
+          font-size: max(1.15vw, 0.5rem);
         }
 
         .text-sub {
           display: block;
-          font-size: 0.65rem;
+          font-size: 0.7vw;
           margin-top: 0.1rem;
           color: #606060;
         }
@@ -66,8 +67,8 @@ body {
         border: none;
         padding: 0;
         background-color: #a6a6a6;
-        width: 2rem;
-        height: 2rem;
+        width: 2.1vw;
+        height: 2.1vw;
         border-radius: 50%;
         outline: 1px dashed transparent;
         cursor: pointer;
@@ -90,7 +91,7 @@ body {
 
         i {
           position: relative;
-          font-size: 0.9rem;
+          font-size: 1vw;
           transition: color 0.3s;
         }
 
@@ -114,7 +115,7 @@ body {
     .avatar-img {
       align-self: center;
       flex-grow: 1;
-      width: 15rem;
+      width: 16vw;
     }
 
     &:before {
@@ -125,7 +126,7 @@ body {
       background-color: #000;
       left: 0;
       top: 0;
-      border-radius: 2rem;
+      border-radius: 2vw;
       opacity: 0;
       visibility: hidden;
       transition: all 0.3s;
